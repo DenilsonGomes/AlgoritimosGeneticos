@@ -3,7 +3,7 @@
 %Inteligência Computacional - Prof. Dr. Jarbas Joaci
 %Função que cria a roleta baseada na avaliação dos individuos
 
-function pai = roleta(nota) %função recebe as notas dos individuos e retorna uma roleta
+function [pai,p] = roleta(nota) %função recebe as notas dos individuos e retorna uma roleta
 [~,num] = size(nota); %num recebe o numero de individuos
 p=0; %casas da roleta ja preenchidas
 for j=1:num %para todos os individuos
@@ -12,4 +12,4 @@ for j=1:num %para todos os individuos
     end
     p = p + ceil(nota(j)); %percorreu todas as casas ate a ultima desse pai
 end
-%retorna a roleta dos possiveis pais
+%retorna a roleta dos possiveis pais e o numero de casas da roleta
