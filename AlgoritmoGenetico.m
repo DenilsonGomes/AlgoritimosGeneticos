@@ -16,8 +16,6 @@ for i=1:num %para toda os individuos
     [x,y] = converte(populacao(i,:)); %converte os binarios do individuo em x e y reais
     nota(i) = avalia(x,y); %avalia o individuo
 end
-populacao
-nota
 
 %selecionar os pais
 %sortear dois inteiro entre 1 e total da roleta e realizar o cruzamento
