@@ -4,6 +4,9 @@
 %Algoritimo genetico para encontrar o maximo da funcao f(x,y)
 %f(x,y) = |x*sen(y*pi/4) + y*sen(x*pi/4)|
 
+clear
+clc
+
 %criar populacao
 num = input('Digite o numero de individuos que deseja criar: '); %num de individuos da população
 tam = input('Digite o numero de genes de cada individuo: '); %numero de genes de cada individuo
