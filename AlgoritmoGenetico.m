@@ -20,9 +20,6 @@ for i=1:num %para toda os individuos
     nota(i) = avalia(x,y); %avalia o individuo
 end
 
-%selecionar os pais
-%sortear dois inteiro entre 1 e total da roleta e realizar o cruzamento
-%entre eles
 for i=1:geracoes %ate um numero maximo de geracoes
     [rolet,ncr] = roleta(ceil(nota)); %calcula a roleta para a nota da populacao
     k=1; %indice da nova populacao
